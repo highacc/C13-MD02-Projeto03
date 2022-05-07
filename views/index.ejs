@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+   <%- include('./components/head') %>
+  </head>
+  <body>
+   
+    <%- include('./components/nav') %>
+    <main>
+      <section id="cards">
+
+        <% pokedex.forEach((pokemon) => { %>
+        <div class="card">
+          <h3><%= pokemon.nome%></h3>
+          <img src="<%= pokemon.imagem %>" alt="imagem do pokemon" />
+          <p class="id">Id: <span id="id"><%= pokemon.id%></span></p>
+          <p class="tipo">Tipo: <span id="tipo"><%= pokemon.tipo%></span></p>
+          <a id="editar" href="/getById/<%= pokemon.id%>/put">Editar</a>
+          <a id="apagar" href="/getById/<%= pokemon.id%>/delete">Apagar</a>
+
+        </div>
+        <% }) %>
+      </section>
+
+    </main>
+
+    <% if ( pokemonPut != null) {%>
+      <%- include('./components/modalPut') %>
+    <% } %>  
+
+    <% if ( pokemonDel != null) {%>
+      <%- include('./components/modalDel') %>
+    <% } %> 
+
+    <footer>
+      <%- include('./components/footer') %>
+    </footer>
+
+    <script src="/js/script_index.js"></script>
+
+  </body>
+</html>

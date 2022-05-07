@@ -1,0 +1,31 @@
+{
+  "name": "c13-md02-proj02-pokedex",
+  "version": "1.0.0",
+  "description": "Projeto 02 da turma 13 modulo 02 da BlueEdtech - Pokedex MVC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highacc/C13-MD02-Proj02-POKEDEX.git"
+  },
+  "author": "Olavo de Souto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/highacc/C13-MD02-Proj02-POKEDEX/issues"
+  },
+  "homepage": "https://github.com/highacc/C13-MD02-Proj02-POKEDEX#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.19.0"
+  },
+  "keywords": []
+}

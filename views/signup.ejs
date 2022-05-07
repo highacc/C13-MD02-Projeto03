@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <%- include('./components/head') %>
+  </head>
+  <body>
+    <%- include('./components/nav') %>
+
+    <main>
+      <section id="cadastro">
+
+          <h2>Cadastre um novo Pokémon</h2>
+
+          <form action="/create" method="POST">
+            <label for="nome" id="labelNome">Nome:</label>
+            <input type="text" id="nome" name="nome" />
+
+            <label for="descricao" id="labelDescricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" />
+
+            <label for="tipo" id="labelTipo">Tipo:</label>
+            <input type="text" id="tipo" name="tipo" />
+
+            <label for="imagem" id="labelImagem">Link da imagem:</label>
+            <input type="text" id="imagem" name="imagem" />
+
+            <button id="btnCadastrar" type="submit" class="buttonDisable">Cadastrar</button>
+          </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <%- include('./components/footer') %>
+    </footer>
+    
+    <script src="/js/script_cadastrar.js"></script>
+
+  </body>
+</html>
