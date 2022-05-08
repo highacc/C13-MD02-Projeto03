@@ -6,6 +6,13 @@
   <body>
    
     <%- include('./components/nav') %>
+    <header>
+      <img src="/img/banner.png" alt="banner">
+      <% if(message != "") {%>
+      <%- include('./components/alerts') %>
+      <% } %>
+    </header>
+   
     <main>
       <section id="cards">
 
@@ -36,7 +43,7 @@
       <%- include('./components/footer') %>
     </footer>
 
-    <script src="/js/script_index.js"></script>
+    <script src="/script.js"></script>
 
   </body>
 </html>

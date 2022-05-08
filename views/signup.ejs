@@ -5,10 +5,15 @@
   </head>
   <body>
     <%- include('./components/nav') %>
-
+    <header>
+      <img src="/img/banner.png" alt="banner">
+      <% if(message != "") {%>
+        <%- include('./components/alerts') %>
+      <% } %>
+    </header>
     <main>
       <section id="cadastro">
-
+          
           <h2>Cadastre um novo Pokémon</h2>
 
           <form action="/create" method="POST">
@@ -34,7 +39,7 @@
       <%- include('./components/footer') %>
     </footer>
     
-    <script src="/js/script_cadastrar.js"></script>
+    <script src="/script.js"></script>
 
   </body>
 </html>
