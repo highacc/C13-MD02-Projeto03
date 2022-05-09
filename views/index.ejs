@@ -18,12 +18,16 @@
 
         <% pokedex.forEach((pokemon) => { %>
         <div class="card">
+ 
+
           <h3><%= pokemon.nome%></h3>
           <img src="<%= pokemon.imagem %>" alt="imagem do pokemon" />
           <p class="id">Id: <span id="id"><%= pokemon.id%></span></p>
           <p class="tipo">Tipo: <span id="tipo"><%= pokemon.tipo%></span></p>
+          <p class="descricao">Descrição: <span id="descricao"><%= pokemon.descricao%></span></p>
           <a id="editar" href="/getById/<%= pokemon.id%>/put">Editar</a>
           <a id="apagar" href="/getById/<%= pokemon.id%>/delete">Apagar</a>
+         
 
         </div>
         <% }) %>

@@ -107,6 +107,12 @@ section#cards div.card p.tipo {
   font-weight: 700;
 }
 
+section#cards div.card p.descricao {
+  margin-bottom: 1rem;
+  color: #b69c0a;
+  font-weight: 700;
+}
+
 section#cards div.card p #id {
   margin-bottom: 1rem;
   color: rgb(214, 214, 214);
@@ -114,6 +120,12 @@ section#cards div.card p #id {
 }
 
 section#cards div.card p #tipo {
+  margin-bottom: 1rem;
+  color: rgb(214, 214, 214);
+  font-weight: 300;
+}
+
+section#cards div.card p #descricao {
   margin-bottom: 1rem;
   color: rgb(214, 214, 214);
   font-weight: 300;

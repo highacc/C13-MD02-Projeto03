@@ -11,4 +11,5 @@ const closeAlert = () => {
   }, 5000)
 };
 
+
 closeAlert();
